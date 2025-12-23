@@ -29,7 +29,7 @@ const navItems = [
 
 export const AppSidebar = () => {
   const location = useLocation();
-  const { currentUser, logout } = useAuth();
+  const { profile, logout } = useAuth();
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -108,14 +108,14 @@ export const AppSidebar = () => {
           <div className="border-t border-border pt-4 mt-4">
             <div className="flex items-center gap-3 px-3 py-2 mb-2">
               <Avatar className="h-10 w-10 ring-2 ring-primary/20">
-                <AvatarImage src={currentUser?.avatarUrl} alt={currentUser?.name} />
+                <AvatarImage src={profile?.avatar_url || ''} alt={profile?.name} />
                 <AvatarFallback className="bg-primary/10 text-primary">
-                  {currentUser?.name?.charAt(0) || 'U'}
+                  {profile?.name?.charAt(0) || 'U'}
                 </AvatarFallback>
               </Avatar>
               <div className="flex-1 min-w-0">
-                <p className="font-medium text-sm truncate">{currentUser?.name}</p>
-                <p className="text-xs text-muted-foreground truncate">{currentUser?.fraternity}</p>
+                <p className="font-medium text-sm truncate">{profile?.name}</p>
+                <p className="text-xs text-muted-foreground truncate">{profile?.fraternity}</p>
               </div>
             </div>
             <Button
