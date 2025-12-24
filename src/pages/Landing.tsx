@@ -170,10 +170,17 @@ const Landing = () => {
               Join thousands of Greek life members who are already building their network.
             </p>
             <Link to="/register">
-              <Button size="lg" className="h-14 px-10 text-lg bg-primary hover:bg-primary/90 text-primary-foreground rounded-xl">
-                Get Started — It's Free
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
+                 <Button
+                  size="sm"
+                  className="
+                  h-11 px-6 text-base rounded-lg
+                  sm:h-14 sm:px-10 sm:text-lg sm:rounded-xl
+                  bg-primary hover:bg-primary/90 text-primary-foreground
+                  "
+                  >
+                  Get Started — It's Free
+                  <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
+                </Button>
             </Link>
           </motion.div>
         </div>
