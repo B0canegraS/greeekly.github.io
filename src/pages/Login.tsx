@@ -57,7 +57,7 @@ const Login = () => {
               <span className="text-primary-foreground font-bold text-2xl">Ω</span>
             </div>
             <div>
-              <h1 className="font-bold text-2xl text-foreground">GreekLink</h1>
+              <h1 className="font-bold text-2xl text-foreground">Grikly</h1>
               <p className="text-sm text-muted-foreground">Connect with your Greek network</p>
             </div>
           </div>
@@ -135,7 +135,7 @@ const Login = () => {
           <p className="mt-8 text-center text-muted-foreground">
             Don't have an account?{' '}
             <Link to="/register" className="text-primary font-medium hover:underline">
-              Join GreekLink
+              Join Grikly
             </Link>
           </p>
         </motion.div>
